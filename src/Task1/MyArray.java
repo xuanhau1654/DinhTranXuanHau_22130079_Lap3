@@ -120,13 +120,13 @@ public class MyArray {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 3, 4, 6, 8, 9, 11, 12, 15, 17 };
-		int key = 9;
-		int index = recursivebinarySearch(arr, key, 0, arr.length - 1);
+		int target = 9;
+		int index = recursivebinarySearch(arr, target, 0, arr.length - 1);
 
 		if (index == -1) {
-			System.out.println("Không tìm thấy " + key + " trong mảng.");
+			System.out.println("Không tìm thấy " + target + " trong mảng.");
 		} else {
-			System.out.println(key + " được tìm thấy tại chỉ số " + index + " trong mảng.");
+			System.out.println(target + " được tìm thấy tại chỉ số " + index + " trong mảng.");
 		}
 	}
 }
